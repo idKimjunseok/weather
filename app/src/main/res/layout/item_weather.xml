@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="data"
+            type="com.weather.model.Location" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            style="@style/line_g030_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_local"
+            android:textColor="@color/g_050"
+            android:text="@{data.title}"
+            android:layout_width="@dimen/padding_50"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"/>
+
+        <View
+            style="@style/line_g030_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_local"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lay_today"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_local"
+            app:layout_constraintEnd_toStartOf="@+id/lay_tomorrow">
+
+            <com.weather.widger.image.ImageLoadView
+                android:id="@+id/img_states"
+                android:layout_width="@dimen/padding_80"
+                android:layout_height="@dimen/padding_80"
+                android:padding="@dimen/padding_10"
+                app:setimg="@{data.consolidated_weather.get(0)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_states">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/font_13_r"
+                    android:id="@+id/text_state_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/b_087"
+                    app:state_name="@{data.consolidated_weather.get(0)}"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/font_13_r"
+                    android:id="@+id/text_the_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_6"
+                    android:textColor="@color/r_100"
+                    app:the_temp="@{data.consolidated_weather.get(0)}"
+                    app:layout_constraintTop_toBottomOf="@+id/text_state_name"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/font_13_r"
+                    android:id="@+id/text_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_6"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:textColor="@color/ng_080"
+                    app:humidity="@{data.consolidated_weather.get(0)}"
+                    app:layout_constraintTop_toBottomOf="@+id/text_state_name"
+                    app:layout_constraintStart_toEndOf="@+id/text_the_temp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            style="@style/line_g030_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lay_today"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lay_tomorrow"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lay_today"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.weather.widger.image.ImageLoadView
+                android:id="@+id/img_tomorrow_states"
+                android:layout_width="@dimen/padding_80"
+                android:layout_height="@dimen/padding_80"
+                android:padding="@dimen/padding_10"
+                app:setimg="@{data.consolidated_weather.get(1)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_tomorrow_states">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/font_13_r"
+                    android:id="@+id/text_tomorrow_state_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/b_087"
+                    app:state_name="@{data.consolidated_weather.get(1)}"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/font_13_r"
+                    android:id="@+id/text_tomorrow_the_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_6"
+                    android:textColor="@color/r_100"
+                    app:the_temp="@{data.consolidated_weather.get(1)}"
+                    app:layout_constraintTop_toBottomOf="@+id/text_tomorrow_state_name"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/font_13_r"
+                    android:id="@+id/text_tomorrow_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_6"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:textColor="@color/ng_080"
+                    app:humidity="@{data.consolidated_weather.get(1)}"
+                    app:layout_constraintTop_toBottomOf="@+id/text_tomorrow_state_name"
+                    app:layout_constraintStart_toEndOf="@+id/text_tomorrow_the_temp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            style="@style/line_g030_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

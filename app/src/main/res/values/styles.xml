@@ -1,0 +1,630 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/b_087</item>
+        <item name="colorAccent">@color/db_100</item>
+        <item name="android:overScrollMode">never</item>
+
+    </style>
+
+    <style name="ContentLoadingProgress">
+        <item name="colorAccent">@color/g_030</item>
+    </style>
+
+    <!--8dp-->
+    <style name="font_8">
+        <item name="android:textSize">8dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_8_b" parent="font_8">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_8_m" parent="font_8">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_8_eb" parent="font_8">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--9dp-->
+    <style name="font_9">
+        <item name="android:textSize">9dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_9_r" parent="font_9">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_9_m" parent="font_9">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_9_b" parent="font_9">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_9_eb" parent="font_9">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_9_n_r" parent="font_9">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+
+    <!--10dp-->
+    <style name="font_10">
+        <item name="android:textSize">10dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_10_b" parent="font_10">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_10_m" parent="font_10">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_10_r" parent="font_10">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_10_eb" parent="font_10">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_10_n_r" parent="font_10">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+
+    <!--11dp-->
+    <style name="font_11">
+        <item name="android:textSize">11dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_11_b" parent="font_11">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_11_m" parent="font_11">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_11_r" parent="font_11">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_11_r_leading" parent="font_11_r">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_11_eb" parent="font_11">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_11_n_r" parent="font_11">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+    <style name="font_11_roboto_m" parent="font_11">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="font_11_roboto_b" parent="font_11">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!--12dp-->
+    <style name="font_12">
+        <item name="android:textSize">12dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_12_b" parent="font_12">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_12_m" parent="font_12">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_12_r" parent="font_12">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_12_r_leading" parent="font_12_r">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_12_n_r" parent="font_12">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+
+    <style name="font_12_n_b" parent="font_12">
+        <item name="android:fontFamily">@font/nanumsquare_bold</item>
+    </style>
+
+    <style name="font_12_eb" parent="font_12">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+
+    <!--13dp-->
+    <style name="font_13">
+        <item name="android:textSize">13dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_13_b" parent="font_13">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_13_m" parent="font_13">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_13_m_leading" parent="font_13_m">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+
+    <style name="font_13_r" parent="font_13">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_13_r_leading" parent="font_13_r">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_13_eb" parent="font_13">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_13_n_r" parent="font_13">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+
+    <!--14dp-->
+    <style name="font_14">
+        <item name="android:textSize">14dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_14_b" parent="font_14">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_14_m" parent="font_14">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_14_m_leading" parent="font_14_m">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_14_r" parent="font_14">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_14_r_leading" parent="font_14_r">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_14_r_magazine" parent="font_14_r">
+        <item name="android:lineSpacingMultiplier">1.3</item>
+    </style>
+    <style name="font_14_b_leading" parent="font_14_b">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_14_eb" parent="font_14">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <style name="font_14_nb" parent="font_14">
+        <item name="android:fontFamily">@font/nanumsquare_bold</item>
+    </style>
+    <style name="font_14_n" parent="font_14">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+
+    <!--15dp-->
+    <style name="font_15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_15_b" parent="font_15">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_15_b_leading" parent="font_15_b">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_15_m" parent="font_15">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_15_r" parent="font_15">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_15_r_leading" parent="font_15_r">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_15_eb" parent="font_15">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_15_nb" parent="font_15">
+        <item name="android:fontFamily">@font/nanumsquare_bold</item>
+    </style>
+    <style name="font_15_roboto_r" parent="font_15">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!--16dp-->
+    <style name="font_16">
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_16_b" parent="font_16">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_16_b_leading" parent="font_16_b">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_16_sb" parent="font_16">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_16_sb_leading" parent="font_16_sb">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_16_m" parent="font_16">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_16_r" parent="font_16">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_16_r_leading" parent="font_16_r">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_16_eb" parent="font_16">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_16_n_r" parent="font_16">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+    <style name="font_16_nb" parent="font_16">
+        <item name="android:fontFamily">@font/nanumsquare_bold</item>
+    </style>
+
+    <!--17dp-->
+    <style name="font_17">
+        <item name="android:textSize">17dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_17_b" parent="font_17">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_17_b_list" parent="font_17_b">
+        <item name="android:lineSpacingMultiplier">0.9</item>
+    </style>
+    <style name="font_17_m" parent="font_17">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_17_m_list" parent="font_17_m">
+        <item name="android:lineSpacingMultiplier">0.9</item>
+    </style>
+    <style name="font_17_r" parent="font_17">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_17_r_leading" parent="font_17_r">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_17_eb" parent="font_17">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_17_nb" parent="font_17">
+        <item name="android:fontFamily">@font/nanumsquare_bold</item>
+    </style>
+    <style name="font_17_roboto_r" parent="font_17">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="font_17_roboto_m" parent="font_17">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!--18dp-->
+    <style name="font_18">
+        <item name="android:textSize">18dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_18_b" parent="font_18">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_18_m" parent="font_18">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_18_m_leading" parent="font_18_m">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_18_r" parent="font_18">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_18_r_leading" parent="font_18_r">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_18_eb" parent="font_18">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--19dp-->
+    <style name="font_19">
+        <item name="android:textSize">19dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_19_b" parent="font_19">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_19_m" parent="font_19">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_19_m_leading" parent="font_19_m">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_19_r" parent="font_19">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_19_r_leading" parent="font_19_r">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="font_19_eb" parent="font_19">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--20dp-->
+    <style name="font_20">
+        <item name="android:textSize">20dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_20_b" parent="font_20">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_20_m" parent="font_20">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_20_r" parent="font_20">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_20_eb" parent="font_20">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_20_nb" parent="font_20">
+        <item name="android:fontFamily">@font/nanumsquare_bold</item>
+    </style>
+    <style name="font_20_na" parent="font_20">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+
+    <!--21dp-->
+    <style name="font_21">
+        <item name="android:textSize">21dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_21_b" parent="font_21">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_21_m" parent="font_21">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_21_r" parent="font_21">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_21_eb" parent="font_21">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_21_na" parent="font_21">
+        <item name="android:fontFamily">@font/nanumsquare_regular</item>
+    </style>
+
+    <!--23dp-->
+    <style name="font_23">
+        <item name="android:textSize">23dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_23_b" parent="font_23">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_23_b_list" parent="font_23_b">
+        <item name="android:lineSpacingMultiplier">0.9</item>
+    </style>
+    <style name="font_23_m" parent="font_23">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_23_r" parent="font_23">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_23_eb" parent="font_23">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--24dp-->
+    <style name="font_24">
+        <item name="android:textSize">24dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_24_b" parent="font_24">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_24_b_list" parent="font_24_b">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+        <item name="android:lineSpacingMultiplier">0.9</item>
+    </style>
+    <style name="font_24_m" parent="font_24">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_24_r" parent="font_24">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+    </style>
+    <style name="font_24_eb" parent="font_24">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--25dp-->
+    <style name="font_25">
+        <item name="android:textSize">25dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_25_m" parent="font_25">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+    </style>
+    <style name="font_25_b" parent="font_25">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_25_roboto_b" parent="font_25">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="font_25_eb" parent="font_25">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <!--26dp-->
+    <style name="font_26">
+        <item name="android:textSize">26dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_26_b" parent="font_26">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_26_eb" parent="font_26">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--28dp-->
+    <style name="font_28">
+        <item name="android:textSize">28dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_28_b" parent="font_28">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_28_eb" parent="font_28">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--30dp-->
+    <style name="font_30">
+        <item name="android:textSize">30dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_30_b" parent="font_30">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_30_eb" parent="font_30">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--32dp-->
+    <style name="font_32">
+        <item name="android:textSize">32dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_32_b" parent="font_32">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_32_eb" parent="font_32">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+    <!--36dp-->
+    <style name="font_36">
+        <item name="android:textSize">36dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_36_b" parent="font_36">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+    <style name="font_36_eb" parent="font_36">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+    <style name="font_36_nb" parent="font_36">
+        <item name="android:fontFamily">@font/nanumsquare_bold</item>
+    </style>
+
+    <!--40dp-->
+    <style name="font_40">
+        <item name="android:textSize">40dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_40_b" parent="font_40">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+    </style>
+
+    <!--42dp-->
+    <style name="font_42">
+        <item name="android:textSize">42dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="font_42_eb" parent="font_42">
+        <item name="android:fontFamily">@font/nanumsquare_extrabold</item>
+    </style>
+
+<!--    <style name="font_badge_brand" parent="font_brand_8"/>-->
+    <style name="font_badge_s" parent="font_9_b"/>
+    
+    <style name="line_g006">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/g_006</item>
+    </style>
+    <style name="line_g006_horizontal">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/g_006</item>
+    </style>
+
+    <style name="line_g030">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/g_030</item>
+    </style>
+    <style name="line_g030_horizontal">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/g_030</item>
+    </style>
+
+    <style name="line_g050">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/g_050</item>
+    </style>
+    <style name="line_g050_horizontal">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/g_050</item>
+    </style>
+
+    <style name="text_0_bold" parent="font_36">
+        <item name="android:fontFamily">@font/notosanskr_bold</item>
+        <item name="android:lineSpacingExtra">1dp</item>
+    </style>
+
+    <style name="text_1_medium" parent="font_25">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+    </style>
+
+    <style name="text_2_medium" parent="font_21">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+        <item name="android:lineSpacingExtra">1dp</item>
+    </style>
+
+    <style name="text_3_regular" parent="font_17">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="text_3_medium" parent="font_17">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="text_4_regular" parent="font_15">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+    </style>
+
+    <style name="text_4_medium" parent="font_15">
+        <item name="android:fontFamily">@font/notosanskr_medium</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+    </style>
+
+    <style name="text_5_regular" parent="font_13">
+        <item name="android:fontFamily">@font/notosanskr_regular</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <!-- custom alert dialog -->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/mg_100</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/mg_100</item>
+    </style>
+
+</resources>

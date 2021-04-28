@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="b_100">#000000</color>
+    <color name="b_087">#212121</color>
+    <color name="b_070">#b3000000</color>
+    <color name="b_050">#80000000</color>
+    <color name="b_030">#4d000000</color>
+    <color name="b_015">#26000000</color>
+    <color name="b_016">#29000000</color>
+    <color name="b_000">#00000000</color>
+
+    <color name="bn_100">#1f3049</color>
+
+    <color name="dg_100">#B5B5BE</color>
+
+    <color name="dn_100">#0f1c2f</color>
+    <color name="dn_007">#1A21284A</color>
+
+    <color name="g_065">#7e7e8c</color>
+    <color name="g_050">#9c9ca7</color>
+    <color name="g_030">#c3c3ca</color>
+    <color name="g_015">#e1e1e5</color>
+    <color name="g_006">#f3f3f5</color>
+
+    <color name="ng_080">#565e6b</color>
+
+    <color name="mg_100">#00c690</color>
+    <color name="mg_080">#33d1a6</color>
+    <color name="mg_030">#b2eedd</color>
+    <color name="mg_015">#d9f7ee</color>
+    <color name="mg_006">#f0fcf9</color>
+
+
+    <color name="rg_100">#34B97D</color>
+    <color name="jg_100">#009A70</color>
+
+
+    <color name="w_100">#FFFFFF</color>
+    <color name="w_070">#B3FFFFFF</color>
+    <color name="w_090">#E6FFFFFF</color>
+    <color name="w_040">#66FFFFFF</color>
+    <color name="w_020">#33FFFFFF</color>
+    <color name="w_000">#00FFFFFF</color>
+
+    <color name="ws_100">#F8F9FA</color>
+
+    <color name="wsg_100">#FCFCFD</color>
+
+    <color name="sb_070">#727dd5</color>
+    <color name="sb_050">#b8bdea</color>
+    <color name="sb_006">#f3f4fc</color>
+
+    <color name="lg_100">#71d104</color>
+    <color name="lg_050">#b7e892</color>
+
+    <color name="lb_100">#00c4ff</color>
+    <color name="lb_050">#8fe1fe</color>
+
+    <color name="so_100">#ff8900</color>
+    <color name="so_050">#fec491</color>
+
+    <color name="lc_100">#ff5c81</color>
+    <color name="lc_050">#feadc0</color>
+    <color name="lc_008">#fff2f5</color>
+
+    <color name="db_100">#3182f6</color>
+    <color name="db_006">#f3f8ff</color>
+
+    <color name="sg_100">#00A057</color>
+    <color name="sg_080">#CC00BE67</color>
+
+    <color name="gb_060">#99383838</color>
+
+
+    <color name="kakao_y">#fae300</color>
+    <color name="kakao_b">#391b1b</color>
+    <color name="facebook">#2e6db5</color>
+
+    <color name="r_100">#ef4949</color>
+</resources>

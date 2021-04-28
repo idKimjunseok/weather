@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SelectableRoundImageView">
+        <attr name="left_bottom_radius" format="dimension"/>
+        <attr name="left_top_radius" format="dimension"/>
+        <attr name="right_bottom_radius" format="dimension"/>
+        <attr name="right_top_radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageLoadView" parent="SelectableRoundImageView">
+        <attr name="left_bottom_radius" />
+        <attr name="left_top_radius" />
+        <attr name="right_bottom_radius" />
+        <attr name="right_top_radius" />
+
+        <attr name="errorText" format="string" />
+        <attr name="errorTextColor" format="color|reference" />
+        <attr name="errorTextStyle" format="reference" />
+
+        <attr name="circleType" format="boolean" />
+
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+</resources>
+
