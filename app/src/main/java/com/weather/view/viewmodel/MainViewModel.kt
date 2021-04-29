@@ -1,9 +1,6 @@
 package com.weather.view.viewmodel
 
-import android.app.ProgressDialog
 import android.content.Context
-import android.view.View
-import android.widget.ProgressBar
 import androidx.core.widget.ContentLoadingProgressBar
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -11,11 +8,8 @@ import com.weather.base.BaseKotlinViewModel
 import com.weather.model.Location
 import com.weather.model.Search
 import com.weather.module.network.DataModel
-import com.weather.util.MyLog
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.functions.Action
-import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 
 class MainViewModel(private val model: DataModel, private val context: Context) : BaseKotlinViewModel() {
@@ -39,21 +33,29 @@ class MainViewModel(private val model: DataModel, private val context: Context) 
         this.mProgressDialog = (view)
     }
 
+    fun ShowProgress() {
+        if (::mProgressDialog.isInitialized) {
+            mProgressDialog.show()
+        }
+    }
+
+    fun HideProgress() {
+        if (::mProgressDialog.isInitialized) {
+            mProgressDialog.hide()
+        }
+    }
 
     fun getSearch(q: String) {
         addDisposable(model.getSearch(q)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .doOnSubscribe{
-                    if (::mProgressDialog.isInitialized) {
-                        mProgressDialog.show()
-                    }
-                }
+                .doOnSubscribe{ShowProgress()}
                 .subscribe({
                     it.run {
                         _search.postValue(this)
                     }
                 }, {
+                    HideProgress()
                     _error.postValue(getErrorMessage(it))
                 })
         )
@@ -66,16 +68,13 @@ class MainViewModel(private val model: DataModel, private val context: Context) 
         }
         addDisposable(Single.zip(locationList) { args -> arrayListOf(args) }
                 .observeOn(AndroidSchedulers.mainThread())
-                .doFinally{
-                    if (::mProgressDialog.isInitialized) {
-                        mProgressDialog.hide()
-                    }
-                }
+                .doFinally{HideProgress()}
                 .subscribe({
                     it.run {
                         _list.postValue((it[0].toCollection(ArrayList())) as ArrayList<Location>)
                     }
                 }, {
+                    HideProgress()
                     _error.postValue(getErrorMessage(it))
                 })
         )

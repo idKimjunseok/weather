@@ -13,7 +13,7 @@ object WeatherBindingAdapter {
             loadview: ImageLoadView,
             setdata: Weather
     ) {
-        setdata?.let {
+        setdata.let {
             loadview.load(setdata.weather_state_abbr)
         }
     }

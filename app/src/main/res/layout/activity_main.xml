@@ -36,8 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:theme="@style/ContentLoadingProgress"
-            style="?android:progressBarStyleLarge"
-            />
+            style="?android:progressBarStyleLarge"/>
         
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipe"
